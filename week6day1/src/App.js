@@ -6,8 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <RandomNumberGame>
-       </RandomNumberGame>
+       <RandomNumberGame numberAnswer = {10}/>
       </header>
     </div>
   );
