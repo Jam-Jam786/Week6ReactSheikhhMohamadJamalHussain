@@ -26,3 +26,9 @@
     scale: 100%;
     font-weight: bolder;
 }
+
+.reset-button:hover{
+    background-color: rgb(220, 20, 173);
+    scale: 100%;
+    font-weight: bolder;    
+}
