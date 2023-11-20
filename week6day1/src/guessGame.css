@@ -20,3 +20,9 @@
     border-color: black;
     border-radius: 8px;
 }
+
+.guess-button:hover{
+    background-color: rgb(220, 20, 173);
+    scale: 100%;
+    font-weight: bolder;
+}

@@ -8,7 +8,7 @@ function RandomNumberGame()
             Guess a number!
             </h1>
 
-            <p><input placeholder='place your guess here' type="text" className='guess-input'/></p>
+            <p><input placeholder='Place your guess here...' type="text" className='guess-input'/></p>
            
             
             <h1><button className='guess-button'>GUESS</button></h1>
