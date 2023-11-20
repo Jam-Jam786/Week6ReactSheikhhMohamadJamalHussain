@@ -1,18 +1,23 @@
+import { useState } from 'react';
 import './guessGame.css';
 
 function RandomNumberGame()
 {
+
+    const [guess, setGuess] = useState("")
+
     return(
         <div className='guess-container'>
             <h1 className='question'>
             Guess a number!
             </h1>
 
-            <p><input placeholder='Place your guess here...' type="text" className='guess-input'/></p>
+            {guess}
+            
+            <input placeholder='Place your guess here...' type="text" className='guess-input' onChange={(event) => {setGuess(event.target.value)}}/>
            
             
             <h1><button className='guess-button'>GUESS</button></h1>
-            
         </div>        
     )
 }
