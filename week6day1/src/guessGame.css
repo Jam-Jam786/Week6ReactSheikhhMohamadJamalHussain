@@ -1,0 +1,22 @@
+.guess-container{
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blue;
+    border-radius: 16px;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.guess-input{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    border-color: black;
+    border-radius: 8px;
+}
