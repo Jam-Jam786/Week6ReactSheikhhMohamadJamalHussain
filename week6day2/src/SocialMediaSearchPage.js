@@ -9,9 +9,9 @@ function UsersData()
             <div className='profilePic'>
 
             </div>
-            <h1 className='name'> hello world  </h1>
-            <h1 className='age'>    </h1>
-            <h1 className='proffesional'>   </h1>
+            <h1 className='name' >jamal</h1>
+            <h1 className='age'>27</h1>
+            <h1 className='proffesional'>student</h1>
         </div>
 
     )
