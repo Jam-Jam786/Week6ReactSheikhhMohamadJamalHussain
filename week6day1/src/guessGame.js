@@ -3,14 +3,14 @@ import { useState } from 'react';
 
 
 
-
+// important function (props)
 function RandomNumberGame(props)
 {
 
     const [guess, setGuess] = useState("")
     const [answer, setAnswer] = useState(props.numberAnswer)
     const [message, setMessage] = useState ("Guess a number between 1 and 5")
-    const [attempts, setattempts] = useState (3)
+    const [attempts, setattempts] = useState (props.trys)
     const [gameOver, setGameOver] = useState(false)
     const [endmessage, setEndmessage] = useState("")
 
@@ -43,14 +43,14 @@ function RandomNumberGame(props)
         }
 
     function Reset(){
-        setattempts(3)
+        setattempts(props.trys)
         setGameOver(false)
         setMessage("Guess a number between 1 and 5")
     }
 
 
     return(
-        <div className='guess-container'>
+        <div style={{backgroundColor : props.colour}} className='guess-container'>
 
             <h1 className='question'>Guess a number!</h1>
             
@@ -61,12 +61,12 @@ function RandomNumberGame(props)
             <h1>number of attempts {attempts}</h1>
             {gameOver == false&&
             <>
-            {/*  */}
+{/*important function*/}
                 <input className='guess-input' placeholder='Place your guess here...' type="number" onChange={(event) => {setGuess(parseInt(event.target.value))}}/>
                 <button className='guess-button' onClick={MakeGuess}>GUESS</button>
             </>
             }
-
+{/* Import function  */}
             {gameOver == true&&
                 <h4>{endmessage} {answer}</h4>
             }
