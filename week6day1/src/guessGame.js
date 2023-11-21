@@ -51,21 +51,28 @@ function RandomNumberGame(props)
 
     return(
         <div className='guess-container'>
+
             <h1 className='question'>Guess a number!</h1>
+            
             {/* {typeof guess} */}
+
             <h2 className='message' >{message}</h2>
             
             <h1>number of attempts {attempts}</h1>
             {gameOver == false&&
             <>
-            <input placeholder='Place your guess here...' type="number" className='guess-input' onChange={(event) => {setGuess(parseInt(event.target.value))}}/>
-            <button className='guess-button' onClick={MakeGuess}>GUESS</button>
+            {/*  */}
+                <input className='guess-input' placeholder='Place your guess here...' type="number" onChange={(event) => {setGuess(parseInt(event.target.value))}}/>
+                <button className='guess-button' onClick={MakeGuess}>GUESS</button>
             </>
             }
+
             {gameOver == true&&
-            <h4>{endmessage} {answer}</h4>
+                <h4>{endmessage} {answer}</h4>
             }
+
             <button className='reset-button' onClick={Reset} >RESET</button>
+
         </div>        
     )
 }
