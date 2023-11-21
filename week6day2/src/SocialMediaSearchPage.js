@@ -1,8 +1,14 @@
 import './SocialMediaSearchPage.css';
-// import { useState } from 'react';
+import { useState } from 'react';
 
-function UsersData()
-{
+function UsersData(){
+
+const [UserName, setUserName] = useState("jamal")
+const [UserAge, setUserAge] = useState("27")
+const [Userprofession, setUserProfession] = useState("profession")
+
+
+
     return(
 
         <div className='searchPage-container'>
@@ -12,9 +18,9 @@ function UsersData()
             </div>
 
             <div className='information'>
-                <h1 className='name' >jamal</h1>
-                <h1 className='age'>27</h1>
-                <h1 className='proffesion'>student</h1>
+                <h1 className='name' >{UserName}</h1>
+                <h1 className='age'>{UserAge}</h1>
+                <h1 className='proffesion'>{Userprofession}</h1>
             </div>
         </div>
 
