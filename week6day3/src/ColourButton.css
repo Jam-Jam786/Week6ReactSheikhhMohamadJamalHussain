@@ -1,0 +1,10 @@
+.colour-container{
+    height: 60vh;
+    width: 60vw;
+    border-radius: 16px;
+    border-width: 8vw;
+    background-color: purpl;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
