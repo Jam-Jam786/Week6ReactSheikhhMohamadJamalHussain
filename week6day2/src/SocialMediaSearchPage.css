@@ -10,5 +10,9 @@
     flex-direction: row;
 }
 
+.friendButton:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
 
 
