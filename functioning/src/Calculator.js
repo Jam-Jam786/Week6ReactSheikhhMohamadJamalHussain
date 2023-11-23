@@ -26,11 +26,14 @@ const [Numbers, setNumbers] = useState(["9", "8", "7", "6", "5", "4", "3", "2", 
                 <div className='addition-button' style={{width:"25%" , height:"100%"}}>+</div>
             </div>
 
-            <div className='calculator-numbers'>  {Numbers.map(a) => (
+            <div className='calculator-numbers'>  {Numbers.map((number) => {
                 return(
-                    num
-                )
-            )}  </div>
+                    <div className='calc-btn' style={{width: "33.3%", height: "25%"}}>
+                        {number}
+                    </div>
+                );
+                })}
+                </div>
 
         </div>
      )   
