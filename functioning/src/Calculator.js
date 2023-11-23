@@ -8,7 +8,7 @@ import './Calculator.css'
 
             <div className="calculator-top">
 
-                 <div className='calculator-display-container'></div>
+                 <div className='calculator-display'></div>
 
             </div>
 

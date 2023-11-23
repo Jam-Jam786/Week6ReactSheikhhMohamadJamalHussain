@@ -1,22 +1,28 @@
 .calculatar-container{
-height: 70vh;
-width: 25vw;
-background-color: yellow;
-border-radius: 24px;
+    height: 70vh;
+    width: 25vw;
+    background-color: yellow;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
 }
 
-/* .calculator-top{
+.calculator-top{
+    flex: 0.25;
+    background-color: pink;
+} 
 
-}
-
-.calculator-display-container{
+.calculator-display{
 
 }
 
 .calculator-operators{
-
+    flex: 0.10;
+    background-color: red;
 }
 
 .calculator-numbers{
-
-} */
+    flex: 0.65;
+    background-color: lightblue;
+}
