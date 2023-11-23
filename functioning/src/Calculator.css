@@ -29,7 +29,28 @@
 .calculator-operators{
     flex: 0.10;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
 }
+
+
+    .division-button{
+        background-color: aqua;
+    }
+    .times-button{
+        background-color: blueviolet;
+    }
+    .minus-button{
+        background-color: aqua;
+    }
+    .addition-button{
+        background-color: blueviolet;
+    }
+
+
 
 .calculator-numbers{
     flex: 0.65;
