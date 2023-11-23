@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import './Calculator.css'
 
 
  export default function Calculator()
 {
+
+const [Numbers, setNumbers] = useState(["9", "8", "7", "6", "5", "4", "3", "2", "1", "0" ])
+
     return(
         <div className='calculatar-container'>
 
@@ -22,9 +26,11 @@ import './Calculator.css'
                 <div className='addition-button' style={{width:"25%" , height:"100%"}}>+</div>
             </div>
 
-            <div className='calculator-numbers'>
-
-            </div>
+            <div className='calculator-numbers'>  {Numbers.map(a) => (
+                return(
+                    num
+                )
+            )}  </div>
 
         </div>
      )   
