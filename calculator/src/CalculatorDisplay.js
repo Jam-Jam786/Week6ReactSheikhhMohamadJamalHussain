@@ -17,3 +17,5 @@ export const CalculatorDisplay = ({input, result}) => {
     );
 
 }
+
+export default CalculatorDisplay;
