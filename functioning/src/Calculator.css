@@ -22,13 +22,14 @@
     width: 100%;
     height: 80%;
     border-radius: 8px;
-    background-color: white;
+    background-color: black;
 
 }
 
 .calculator-operators{
     flex: 0.10;
     background-color: blue;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,8 +37,20 @@
 
 }
 
+    .operator-btn{
+        border: 1px solid black;
+    }
+    
+    .operator-btn:hover{
+        background-color: red;
+        box-shadow: inset 0 0 20px white;
+        font-size: 100%;
+        font-weight: bolder;
+        cursor: pointer;
+    }
 
-    .division-button{
+
+    /* .division-button{
         background-color: aqua;
     }
     .times-button{
@@ -48,18 +61,30 @@
     }
     .addition-button{
         background-color: blueviolet;
-    }
+    } */
 
 
 
 .calculator-numbers{
     flex: 0.65;
     background-color: rgb(53, 53, 165);
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 
 }
     .calc-btn{
+        border: 1px solid black;
+        margin: 0.1px;
+        
+    }
+
+    .calc-btn:hover{
+        background-color: orange;
+        box-shadow: inset 0 0 20px white;
+        font-size: 100%;
+        font-weight: bolder;
+        cursor: pointer;
     }
