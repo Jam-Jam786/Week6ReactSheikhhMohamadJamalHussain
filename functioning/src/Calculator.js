@@ -13,6 +13,15 @@ const [Operators, setOperators] = useState ([ "%","*","-","+" ])
 const [Output, setOutput] = useState("")
 
 
+    function HandleInput(text){
+        // add code to ensure text is only added to the output if the output is less than
+        // 16 charactors in length
+        if(Output.length < 16){
+            setOutput(Output + text)
+        }
+
+    }
+
 
     return(
         < div className='calculatar-container'>
@@ -25,7 +34,7 @@ const [Output, setOutput] = useState("")
 
             <div className='calculator-operators'>  {Operators.map((Operator) => {
                 return(
-                        <div className='operator-btn' style = {{width:"25%" , height:"100%", backgroundColor: "orange"}} onClick={() => {setOutput(Output + Operator)}}>
+                        <div className='operator-btn' style = {{width:"25%" , height:"100%", backgroundColor: "orange"}} onClick={() => {HandleInput(Operator)}}>
                             {Operator}
                         </div>
                 );
@@ -42,7 +51,7 @@ const [Output, setOutput] = useState("")
             <div className='calculator-numbers'>  {Numbers.map((number) => {
                 return(
                     // add an onclick parameter that will add the buttons number to the end of the output
-                        <div className='calc-btn' style={{width: "31%", height: "23%", backgroundColor: "red"}} onClick={() => {setOutput(Output + number)}}>
+                        <div className='calc-btn' style={{width: "31%", height: "23%", backgroundColor: "red"}} onClick={() => {HandleInput(number)}}>
                             {number}
                         </div>
                 );
@@ -50,7 +59,7 @@ const [Output, setOutput] = useState("")
             <div className='calc-btn' style={{width: "31%", height: "23%"}} onClick={() => setOutput("")}>
                         clear
             </div>
-            
+
             {/* evaulated this string as a function and it is not recommended to use this in professional settings */}
             <div className='calc-btn' style={{width: "31%", height: "23%"}} onClick={() => {setOutput(Function("return " + Output))}}>
                         =
